@@ -1,68 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# Zyper Frontend Interview Challenge - Instagram Engagement Tool
+## By Zachary Plante
+#### Overview
+This Git Repository contains what is needed for a single page web app that utilizes Zyper's API, powered by React. It displays information on Instagram users individually or as an aggregate, depending on what the user wants.
+#### What is Required
+Node, npm, axios, and flatlist-react are required for this. I will try and include needed modules, but if anything is lost in git here are instructions for installing needed software. Download or clone this repository, cd into zyper-test, and follow the instructions.
+#####Node and npm
+Node and npm can be installed with 'install node' (you may need sudo or brew commands as well). 
+#####Axios
+Once npm is installed, axios can be installed with 'npm install axios'.
+#####flatlist-react 
+Once npm is installed, axios can be installed with 'npm install flatlist-react'. This is an open source component that can be used instead of the map function for rendering a list and increases overall readability and programming.
+####Starting App
+Run 'npm start' inside the folder to begin running the server, which should open up the page. Terminal may ask for permission before doing so.
+####Functionality
+The App takes a string of of instagram usernames that can be either whitespace or comma seperated. It also takes a boolean to display the information for individual users or not. It then displays the results. If a user does not exist, it will return not valid. If nothing is inputed, it will do nothing. If the job fails, it will display an error message.
+####What to Look At
+App.js, resultList.js, result.js, and main.css were all written from scratch by me, if you want to view a sample of my coding practices. These are all found in the src folder. Optionally, you could create a new React Project and add these files into the src folder of your new project (replacing the default App.js) to run the project. 
+####Testing
+After Testing, I found giving the API a blank string returns NaN, so I made it impossible for the user to submit a blank string. Included catch statements and error messages incase the job should fail. Some testing methods are left if I were to return to this project.
+#### What to Make Better
+This is functional as an internal tool, but it could be made better. If this were to be seen by users, I would want more desing that communicated to the user what was going on to decrease confusion, like a spinning wheel to denote a job is pending. Given time and scope restraints, it seemed unnecessary to include such affordances. More functionality could be added to do more with the information presented, but that would require new API's or front end logic.
+#####Thank you for your time in viewing my work. If you have any questions feel free to contact me at my email or number on my resume. I hope to hear from you soon.

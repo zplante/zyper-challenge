@@ -1,0 +1,45 @@
+*{
+	font-family: arial;
+}
+.left-aligned-textbox{
+	padding-left: 50px;
+}
+.left-aligned-page{
+	padding-left: 25px;
+}
+
+.big-text-box{
+	width: 500px;
+	height: 150px;
+}
+.custom-card{
+	width: 500px;
+}
+.custom-greycard{
+	width: 500px;
+	background-color:#e6e6e6;
+}
+.result-text{
+	color:#000000;
+	font-size: 14px;
+}
+.headline{
+	background-color: #157FFB;
+}
+.headline-text{
+	color:#ffffff;
+	font-size: 25px;
+	padding-left: 10px;
+
+}
+.result-padding{
+	padding-top: 20px;
+	padding-left: 20px;
+}
+.individual{
+	padding-left: 5px;
+	padding-right: 20px;
+}
+.error-padding{
+	padding-left: 75px;
+}
