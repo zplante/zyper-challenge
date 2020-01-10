@@ -1,5 +1,5 @@
 # Zyper Frontend Interview Challenge - Instagram Engagement Tool
-## By Zachary Plante
+# By Zachary Plante
 #### Overview
 This Git Repository contains what is needed for a single page web app that utilizes Zyper's API, powered by React. It displays information on Instagram users individually or as an aggregate, depending on what the user wants.
 #### What is Required
